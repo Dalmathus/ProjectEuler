@@ -8,6 +8,7 @@ public class Euler3 {
 	**/
 	public static void main(String[] args) {
 
+		long startTime = System.currentTimeMillis();
 		long TARGET = 600851475143L;
 		// only need to look up to sqrt(TARGET)
 		long largestPrime = (long)Math.ceil(Math.sqrt(TARGET));
@@ -27,6 +28,9 @@ public class Euler3 {
 			}
 			largestPrime--;
 		}
+
+		long endTime = System.currentTimeMillis();
+		System.err.println("Proccess took " + (endTime - startTime) + " milliseconds");
 	}
 
 	public static boolean isPrime(long num) {
