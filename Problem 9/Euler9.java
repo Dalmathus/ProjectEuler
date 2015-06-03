@@ -12,7 +12,7 @@ public class Euler9 {
 
 		long startTime = System.currentTimeMillis();
 
-		int TARGET = 400000;
+		int TARGET = 1000;
 		int scalingFactor = 1;
 
 		for (int[] ia : findPrimitives()) {
