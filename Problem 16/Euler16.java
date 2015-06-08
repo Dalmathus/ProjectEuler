@@ -11,8 +11,9 @@ public class Euler16 {
 		long startTime = System.currentTimeMillis();
 		
 		final int EXPONENT = 1000;
-		BigInteger num = BigInteger.pow(2, EXPONENT);		
-		long sum = 0;
+		BigInteger num = new BigInteger("2");		
+		num = num.pow(EXPONENT);
+		long sum = 0;	
 
 		String[] numbers = num.toString().split("");
 
